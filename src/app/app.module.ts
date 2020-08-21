@@ -1,11 +1,17 @@
+
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { PreguntasSeguridadComponent } from './preguntas-seguridad/preguntas-seguridad.component';
+
+
+import {DemoNgZorroAntdModule} from './ng-zorro-antd.module';
+
+
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,8 +26,10 @@ const rutas: Routes = [
   {
     path: 'preguntas-seguridad',
     component: PreguntasSeguridadComponent
+    
   },
 ]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +41,8 @@ const rutas: Routes = [
     RouterModule.forRoot(rutas),
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DemoNgZorroAntdModule
   ],
   providers: [{ provide: NZ_I18N, useValue: es_ES }],
   bootstrap: [AppComponent]
