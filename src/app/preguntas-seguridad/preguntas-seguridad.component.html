@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preguntas-seguridad.component.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +18,20 @@
       <nz-descriptions-item nzTitle="Correo electronico">PRUEBA@GNP.COM.MX </nz-descriptions-item>
       <nz-descriptions-item nzTitle="Nacionalidad">Peru</nz-descriptions-item>
     </nz-descriptions>
+
+    <nz-card style="width:1550px;">
+      <nz-descriptions nzTitle="">
+        <nz-descriptions-item nzTitle="Atendiendo a">Jose Gamelo</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Perfil">Asegurado</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Telefono">555098737</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Nombre">Jose Antonio Gamelo Gamelo</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="No. cliente">00250044</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Sexo">Masculino</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Correo electronico">PRUEBA@GNP.COM.MX </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Nacionalidad">Peru</nz-descriptions-item>
+      </nz-descriptions>
+    </nz-card>
+  
         
         <nz-breadcrumb>
             <i nz-icon nzType="home" nzTheme="outline"></i>
@@ -25,6 +40,51 @@
             <nz-breadcrumb-item>detalle de la poliza</nz-breadcrumb-item>
           </nz-breadcrumb>
       <p>Preguntas de seguridad</p>
+      <form nz-form>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="5">Required</nz-form-label>
+          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Input is required">
+            <input nz-input [ngModel]="'Required Input'" name="required" required />
+          </nz-form-control>
+        </nz-form-item>
+        <button nz-button nzType="default" nzDanger>Default</button>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="5">MaxLength</nz-form-label>
+          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="MaxLength is 6">
+            <input nz-input [ngModel]="'MaxLength is 6'" name="maxlength" maxlength="6" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="5">MinLength</nz-form-label>
+          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="MinLength is 6">
+            <input nz-input [ngModel]="'MinLength is 6'" name="minlength" minlength="6" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="5">Email</nz-form-label>
+          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Email is not valid">
+            <input nz-input [ngModel]="'Input Email'" name="email" email />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="5">Pattern</nz-form-label>
+          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Pattern not match">
+            <input nz-input [ngModel]="'Match pattern'" name="pattern" pattern=".{3,}" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="5">Mix</nz-form-label>
+          <nz-form-control nzHasFeedback [nzSpan]="12" [nzErrorTip]="combineTpl">
+            <input nz-input [ngModel]="'MaxLength is 12 and MinLength is 6'" name="mix" minlength="6" maxlength="12" required />
+            <ng-template #combineTpl let-control>
+              <ng-container *ngIf="control.hasError('maxlength')">MaxLength is 12</ng-container>
+              <ng-container *ngIf="control.hasError('minlength')">MinLength is 6</ng-container>
+              <ng-container *ngIf="control.hasError('required')">Input is required</ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+    `,
       </nz-layout>
 </body>
 </html>
