@@ -21,12 +21,21 @@
 
     <nz-card style="width:1550px;">
       <nz-descriptions nzTitle="">
-        <nz-descriptions-item nzTitle="Poliza"> </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Version"> </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Ramo"> </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Estatus"> </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Segmento"> </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Producto"> </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Poliza"><nz-select>
+          <nz-option nzValue="00001405545144" nzLabel="00001405545144"></nz-option>
+        </nz-select>
+       </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Version"> 
+          <nz-select>
+            <nz-option nzValue="2" nzLabel="2"></nz-option>
+          </nz-select>
+        </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Ramo">GMM </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Estatus"> Vigente
+          <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
+        </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Segmento">Individual</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Producto">Premier individual</nz-descriptions-item>
       </nz-descriptions>
     </nz-card>
   
