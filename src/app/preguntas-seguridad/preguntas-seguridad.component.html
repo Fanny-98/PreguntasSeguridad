@@ -1,89 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="preguntas-seguridad.component.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="preguntas-seguridad.component.css">
+   <title>Preguntas Seguridad</title>
 </head>
 <body>
-    <nz-layout>
-         <nz-descriptions nzTitle="">
-      <nz-descriptions-item nzTitle="Atendiendo a">Jose Gamelo</nz-descriptions-item>
-      <nz-descriptions-item nzTitle="Perfil">Asegurado</nz-descriptions-item>
-      <nz-descriptions-item nzTitle="Telefono">555098737</nz-descriptions-item>
-      <nz-descriptions-item nzTitle="Nombre">Jose Antonio Gamelo Gamelo</nz-descriptions-item>
-      <nz-descriptions-item nzTitle="No. cliente">00250044</nz-descriptions-item>
-      <nz-descriptions-item nzTitle="Sexo">Masculino</nz-descriptions-item>
-      <nz-descriptions-item nzTitle="Correo electronico">PRUEBA@GNP.COM.MX </nz-descriptions-item>
-      <nz-descriptions-item nzTitle="Nacionalidad">Peru</nz-descriptions-item>
-    </nz-descriptions>
 
-    <nz-card style="width:1550px;">
-      <nz-descriptions nzTitle="">
-        <nz-descriptions-item nzTitle="Poliza"><nz-select>
-          <nz-option nzValue="00001405545144" nzLabel="00001405545144"></nz-option>
-        </nz-select>
-       </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Version"> 
-          <nz-select>
-            <nz-option nzValue="2" nzLabel="2"></nz-option>
-          </nz-select>
-        </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Ramo">GMM </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Estatus"> Vigente
-          <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
-        </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Segmento">Individual</nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Producto">Premier individual</nz-descriptions-item>
-      </nz-descriptions>
-    </nz-card>
-  
-        
-        <nz-breadcrumb>
-            <i nz-icon nzType="home" nzTheme="outline"></i>
-            <nz-breadcrumb-item>Identifiacion del cliente</nz-breadcrumb-item>
-            <nz-breadcrumb-item>Polizas</nz-breadcrumb-item>
-            <nz-breadcrumb-item>detalle de la poliza</nz-breadcrumb-item>
-          </nz-breadcrumb>
-      <p>Preguntas de seguridad</p>
-      <form nz-form>
-        <nz-form-item>
-          <nz-form-label [nzSpan]="5">¿Cual es su fecha de nacimeinto?</nz-form-label>
-          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Input is required">
-            <input nz-input [ngModel]="''" name="required" required />
-          </nz-form-control>
-        </nz-form-item>
-       
-        <nz-form-item>
-          <nz-form-label [nzSpan]="5">¿Cual es su forma de pago?</nz-form-label>
-          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="MaxLength is 6">
-            <input nz-input [ngModel]="''" name="maxlength" maxlength="6" />
-          </nz-form-control>
-        </nz-form-item>
+  <nz-layout>
+    <nz-header>
+      
+        <nz-page-header-content>
+          <nz-descriptions nzSize="small" [nzColumn]="2">
+            <nz-descriptions-item nzTitle="Atendiendo" [nzSpan]="1">Jose Gamelo</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Perfil" [nzSpan]="1">Asegurado/Contratante</nz-descriptions-item>
+           </nz-descriptions>
 
-        <nz-form-item>
-          <nz-form-label [nzSpan]="5">¿Cual es el importe total a pagar de su poliza?</nz-form-label>
-          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="MinLength is 6">
-            <input nz-input [ngModel]="''" name="minlength" minlength="6" />
-          </nz-form-control>
-        </nz-form-item>
+            <nz-descriptions nzSize="small" [nzColumn]="6">
+            <nz-descriptions-item nzTitle="Nombre" [nzSpan]="1">Jose Gamelo Gamelo</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="No. Cliente" [nzSpan]="1">0025006611 </nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Telefono" [nzSpan]="1">5538899189</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="RFC" [nzSpan]="1">GAGJ2005281H0</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Rol" [nzSpan]="1">Asegurado</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Reg IVR" [nzSpan]="1">
+              <i nz-icon nzType="close-circle" nzTheme="fill"></i>
+            </nz-descriptions-item> 
+          </nz-descriptions>
 
-        <nz-form-item>
-          <nz-form-label [nzSpan]="5">¿Cual es su RFC?</nz-form-label>
-          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Email is not valid">
-            <input nz-input [ngModel]="''" name="email" email />
-          </nz-form-control>
-        </nz-form-item>
+          <nz-descriptions nzSize="small" [nzColumn]="6">
+            <nz-descriptions-item nzTitle="Email" [nzSpan]="1">PRUEBA@GNP.COM.MX</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Nacionalidad" [nzSpan]="1">Peru </nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Sexo" [nzSpan]="1">Masculino</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Edad" [nzSpan]="1">20 años</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Perfil" [nzSpan]="1">Clasico</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="Reg portal" [nzSpan]="1">
+              <i nz-icon nzType="close-circle" nzTheme="fill"></i>
+            </nz-descriptions-item> 
+          </nz-descriptions>
 
-        <nz-form-item>
-          <nz-form-label [nzSpan]="5">¿Cual es su estado civil?</nz-form-label>
-          <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Pattern not match">
-            <input nz-input [ngModel]="' '" name="pattern" pattern=".{3,}" />
-          </nz-form-control>
-        </nz-form-item>
+        </nz-page-header-content>
+    
+    </nz-header>
 
-      </form>
-      </nz-layout>
+    <nz-content>
+      
+      <nz-breadcrumb>
+        <nz-breadcrumb-item>
+         <a><i nz-icon nzType="home"></i><span>Identificacion del cliente</span></a>
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item>
+          <a><span>Polizas</span></a>
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item>
+          detalle de la poliza
+        </nz-breadcrumb-item>
+      </nz-breadcrumb>
+
+    </nz-content>
+
+    <nz-footer>
+
+      <div>
+          <nz-page-header-content>
+            <nz-descriptions nzSize="small" [nzColumn]="3">
+
+              <nz-descriptions-item nzTitle="Poliza" [nzSpan]="1">
+                <nz-select>
+                  <nz-option nzValue="" nzLabel="00001405545144"></nz-option>
+                </nz-select>
+
+              </nz-descriptions-item>
+              <nz-descriptions-item nzTitle="Version" [nzSpan]="1">
+                <nz-select>
+                  <nz-option nzValue="" nzLabel="2"></nz-option>
+                </nz-select>
+
+              </nz-descriptions-item>
+              <nz-descriptions-item nzTitle="Ramo" [nzSpan]="1">GMM</nz-descriptions-item>
+            </nz-descriptions>
+
+              <nz-descriptions nzSize="small" [nzColumn]="5">
+              <nz-descriptions-item nzTitle="Estatus" [nzSpan]="1">Vigente
+                <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
+              </nz-descriptions-item>
+              <nz-descriptions-item nzTitle="Segmento" [nzSpan]="1">Individual </nz-descriptions-item>
+              <nz-descriptions-item nzTitle="Producto" [nzSpan]="1">Premier Individual</nz-descriptions-item>
+              <nz-descriptions-item nzTitle="Circulo" [nzSpan]="1">Novus</nz-descriptions-item>
+              <nz-descriptions-item nzTitle="Pagada hasta" [nzSpan]="1">02/07/2020</nz-descriptions-item>
+            </nz-descriptions>
+
+          </nz-page-header-content>
+      </div>
+     <h3>Preguntas de seguridad</h3>
+    </nz-footer>
+  </nz-layout>
 </body>
 </html>
