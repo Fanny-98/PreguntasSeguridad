@@ -45,6 +45,22 @@ span,i, nz-breadcrumb-item, a, nz-breadcrumb{
   left: 0px;
 }
 
-h3{
+h3, nz-form-item{
   color: #0A1A7B;
 }
+
+[nz-button] {
+  margin-right: 8px;
+  position: relative;
+  left: 900px;
+  color: #EB984E;
+  border: #EB984E 1px solid;
+  border-radius: 10px;
+}
+
+input{
+  border-style: outset;
+  border-radius: 10px;
+  border-bottom: 4px solid #EB984E;
+}
+

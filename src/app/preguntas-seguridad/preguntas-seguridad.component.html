@@ -92,8 +92,70 @@
             </nz-descriptions>
 
           </nz-page-header-content>
+
       </div>
-     <h3>Preguntas de seguridad</h3>
+
+     <br><h3>Preguntas de seguridad</h3>
+     <br>
+
+     <div>
+       <br>
+      <form nz-form>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="6" nzFor="date">¿Cual es tu fecha de nacimiento?</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input nz-input name="date" type="date" id="date">
+            <button nz-button nzType="validar" nzDanger>Validar</button>
+          </nz-form-control>
+        </nz-form-item >
+      </form>
+
+      <br>
+      <form nz-form>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="6" nzFor="pago">¿Cual es su forma de pago?</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input nz-input name="pago" type="pago" id="pago">
+            <button nz-button nzType="validar" nzDanger>Validar</button>
+          </nz-form-control>
+        </nz-form-item >
+      </form>
+
+      <br>
+      <form nz-form>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="6" nzFor="importe">¿Cual es su importe total a pagar de su poliza?</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input nz-input name="importe" type="importe" id="importe">
+            <button nz-button nzType="validar" nzDanger>Validar</button>
+          </nz-form-control>
+        </nz-form-item >
+      </form>
+
+      <br>
+      <form nz-form>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="6" nzFor="RFC">¿Cual es su RFC?</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input nz-input name="RFC" type="RFC" id="RFC">
+            <button nz-button nzType="validar" nzDanger>Validar</button>
+          </nz-form-control>
+        </nz-form-item >
+      </form>
+
+      <br>
+      <form nz-form>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="6" nzFor="estatus">¿Cual es su estado civil?</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input nz-input name="estatus" type="estatus" id="estatus">
+            <button nz-button nzType="validar" nzDanger>Validar</button>
+          </nz-form-control>
+        </nz-form-item >
+      </form>
+
+     </div>
+
     </nz-footer>
   </nz-layout>
 </body>
