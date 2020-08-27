@@ -22,8 +22,11 @@ nz-footer {
 
 div {
   border: #ECF0F1 1px solid;
-  font-size: 150%;
+  font-size: 1.5em;
+	margin-top: 20px;
+	padding-left: 20px;
 }
+
 
 nz-sider {
   background: #3ba0e9;
@@ -36,7 +39,9 @@ nz-content {
   color: #fff;
   line-height: 60px;
   position: relative;
+  min-height: 40px;
   left: 0px;
+  
 }
 
 span,i, nz-breadcrumb-item, a, nz-breadcrumb{
@@ -45,7 +50,7 @@ span,i, nz-breadcrumb-item, a, nz-breadcrumb{
   left: 0px;
 }
 
-h3, nz-form-item{
+h3, nz-form-item, nz-descriptions-item [nzTitle]{
   color: #0A1A7B;
 }
 
@@ -56,6 +61,7 @@ h3, nz-form-item{
   color: #EB984E;
   border: #EB984E 1px solid;
   border-radius: 10px;
+  margin-bottom: 12px;
 }
 
 input{
@@ -64,3 +70,14 @@ input{
   border-bottom: 4px solid #EB984E;
 }
 
+nz-form-label [nzSpan] {
+  color: #0A1A7B;
+  font-size: 1.5em;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+[nz-button] {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
