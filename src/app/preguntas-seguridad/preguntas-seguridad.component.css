@@ -1,83 +1,68 @@
-body
- {
-background-color: #5A5D5C;
+.layout {
+  min-height: 100vh;
 }
 
-:host {
+ nz-page-header {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  background: #fff;
   text-align: left;
+  line-height: 0.7;
+  word-spacing: 10px;
 }
 
-nz-header{
-  background: #FDFEFE;
-  color: black;
-  min-height: 205px
-}
-
-nz-footer {
-  line-height: 1.5;
-  background: #FDFEFE;
-  color: black;
-  min-height: 1000px;
-}
-
-div {
-  border: #ECF0F1 1px solid;
-  font-size: 1.5em;
-	margin-top: 20px;
-	padding-left: 20px;
-}
-
-
-nz-sider {
-  background: #3ba0e9;
-  color: #fff;
-  line-height: 120px;
+[nz-menu] {
+  line-height: 64px;
 }
 
 nz-content {
-  background: #CACFD2;
-  color: #fff;
-  line-height: 60px;
-  position: relative;
-  min-height: 40px;
-  left: 0px;
-  
+  padding: 0 50px;
+  margin-top: 64px;
 }
 
-span,i, nz-breadcrumb-item, a, nz-breadcrumb{
+.inner-content {
+  background: #fff;
+  padding: 250px;
+  min-height: 150;
+  border: #CACFD2 1px solid;
+}
+
+.inner-content2{
+  background: #fff;
+  border: #CACFD2 1px solid;
+  height: 100px;
+  position: absolute;
+  top: 215px;
+  left: 70px;
+  right: 70px;
+  text-align: left;
+  line-height: 0.5;
+  word-spacing: 5px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+nz-breadcrumb-item, nz-breadcrumb{
   color: #EB984E;
   position: relative;
   left: 0px;
-}
-
-h3, nz-form-item, nz-descriptions-item [nzTitle]{
-  color: #0A1A7B;
+  margin: 16px 0;
 }
 
 [nz-button] {
-  margin-right: 8px;
-  position: relative;
-  left: 900px;
+  margin-bottom: 12px;
+  float: right;
+  position: absolute;
+  top: 325px;
+  right: 70px;
   color: #EB984E;
-  border: #EB984E 1px solid;
-  border-radius: 10px;
-  margin-bottom: 12px;
+  background: #fff;
+  border: #fff;
 }
 
-input{
-  border-style: outset;
-  border-radius: 10px;
-  border-bottom: 4px solid #EB984E;
-}
-
-nz-form-label [nzSpan] {
-  color: #0A1A7B;
-  font-size: 1.5em;
-	margin-top: 20px;
-	padding-left: 20px;
-}
-
-[nz-button] {
-  margin-right: 8px;
-  margin-bottom: 12px;
+h4{
+  color: #080E94;
 }

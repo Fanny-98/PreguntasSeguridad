@@ -8,9 +8,7 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PreguntasSeguridadComponent } from './preguntas-seguridad/preguntas-seguridad.component';
 
-
 import {DemoNgZorroAntdModule} from './ng-zorro-antd.module';
-
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
