@@ -66,3 +66,7 @@ nz-breadcrumb-item, nz-breadcrumb{
 h4{
   color: #080E94;
 }
+
+[nzSpan], [nzColumn], [nzTitle]{
+  color: #080E94;
+}
