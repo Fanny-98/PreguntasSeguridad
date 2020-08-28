@@ -23,7 +23,7 @@ nz-content {
 
 .inner-content {
   background: #fff;
-  padding: 250px;
+  padding: 350px;
   min-height: 150;
   border: #CACFD2 1px solid;
 }
@@ -33,12 +33,23 @@ nz-content {
   border: #CACFD2 1px solid;
   height: 100px;
   position: absolute;
-  top: 215px;
+  top: 220px;
   left: 70px;
   right: 70px;
   text-align: left;
-  line-height: 0.5;
-  word-spacing: 5px;
+  line-height: 0.7;
+  word-spacing: -1px;
+  font-style: "word-spacing: none;"
+}
+
+.inner-content3{
+  background: #fff;
+  border: #CACFD2 1px solid;
+  position: absolute;
+  top: 390px;
+  left: 200px;
+  width: 60%;
+  height: 65%;
 }
 
 nz-footer {
@@ -67,6 +78,28 @@ h4{
   color: #080E94;
 }
 
-[nzSpan], [nzColumn], [nzTitle]{
+h3{
   color: #080E94;
+  position: absolute;
+  top: 350px;
+  left: 200px;
+}
+
+input{
+  border-style: outset;
+  border-radius: 10px;
+  border-bottom: 4px solid #EB984E;
+  position: absolute;
+  top: 5px;
+  left: 100px;
+}
+
+
+h5{
+  top: 5px;
+  color: #080E94;
+  text-align: left;
+  font-size: 15px;
+  left: 100px;
+  position: relative;
 }

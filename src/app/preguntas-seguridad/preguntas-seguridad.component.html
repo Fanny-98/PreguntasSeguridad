@@ -72,6 +72,7 @@
               </nz-descriptions-item>
               <nz-descriptions-item nzTitle="Ramo" [nzSpan]="1"><h4>GMM</h4></nz-descriptions-item>
             </nz-descriptions>
+            
               <nz-descriptions nzSize="small" [nzColumn]="5">
               <nz-descriptions-item nzTitle="Estatus" [nzSpan]="1"><h4>Vigente
                 <i nz-icon nzType="check-circle" nzTheme="fill"></i>
@@ -84,8 +85,53 @@
           </nz-page-header-content>
          </div>
          <button nz-button nzType="primary"><p nz-icon nzType="left"></p>Regresar</button>
-      </div>
+         <h3>Preguntas de seguridad</h3>
+         <div class="inner-content3">
+          <i nz-icon nzType="close" nzTheme="outline"></i>
+          <br>
+          <h5>¿Cual es tu fecha de nacimiento? :</h5>
+         <form nz-form>
+           <nz-form-item>
+             <nz-form-control [nzSpan]="14">
+               <input nz-input name="date" type="date" id="date">
+             </nz-form-control>
+           </nz-form-item >
+         </form>
+         <h5>¿Cual es tu forma de pago? :</h5>
+         <form nz-form>
+          <nz-form-item>
+            <nz-form-control [nzSpan]="14">
+              <input nz-input name="pago" type="pago" id="pago">
+            </nz-form-control>
+          </nz-form-item >
+        </form>
+        <h5>¿Cual es su importe total a pagar? :</h5>
+        <form nz-form>
+          <nz-form-item>
+            <nz-form-control [nzSpan]="14">
+              <input nz-input name="importe" type="importe" id="importe">
+            </nz-form-control>
+          </nz-form-item >
+        </form>
+        <h5>¿Cual es su RFC? :</h5>
+        <form nz-form>
+          <nz-form-item>
+            <nz-form-control [nzSpan]="14">
+              <input nz-input name="RFC" type="RFC" id="RFC">
+            </nz-form-control>
+          </nz-form-item >
+        </form>
+        <h5>¿Cual es su estado civil? :</h5>
+        <form nz-form>
+          <nz-form-item>
+            <nz-form-control [nzSpan]="14">
+              <input nz-input name="status" type="status" id="status">
+            </nz-form-control>
+          </nz-form-item >
+        </form>
   
+    </div>
+      </div>
     </nz-content> 
     <nz-footer>
     </nz-footer>
