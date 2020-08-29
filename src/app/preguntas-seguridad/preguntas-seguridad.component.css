@@ -23,7 +23,7 @@ nz-content {
 
 .inner-content {
   background: #fff;
-  padding: 350px;
+  padding: 360px;
   min-height: 150;
   border: #CACFD2 1px solid;
 }
@@ -31,7 +31,7 @@ nz-content {
 .inner-content2{
   background: #fff;
   border: #CACFD2 1px solid;
-  height: 100px;
+  height: 20%;
   position: absolute;
   top: 220px;
   left: 70px;
@@ -46,7 +46,7 @@ nz-content {
   background: #fff;
   border: #CACFD2 1px solid;
   position: absolute;
-  top: 390px;
+  top: 420px;
   left: 200px;
   width: 60%;
   height: 65%;
@@ -64,14 +64,12 @@ nz-breadcrumb-item, nz-breadcrumb{
 }
 
 [nz-button] {
-  margin-bottom: 12px;
-  float: right;
-  position: absolute;
-  top: 325px;
-  right: 70px;
-  color: #EB984E;
-  background: #fff;
-  border: #fff;
+  position: relative;
+  top: 1px;
+  color: #fff;
+  background: #EB984E;
+  border: #EB984E;
+  left: 80%;
 }
 
 h4{
@@ -81,7 +79,7 @@ h4{
 h3{
   color: #080E94;
   position: absolute;
-  top: 350px;
+  top: 380px;
   left: 200px;
 }
 
