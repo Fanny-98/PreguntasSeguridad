@@ -72,10 +72,9 @@
               </nz-descriptions-item>
               <nz-descriptions-item nzTitle="Ramo" [nzSpan]="1"><h4>GMM</h4></nz-descriptions-item>
             </nz-descriptions>
-
               <nz-descriptions nzSize="small" [nzColumn]="5">
-              <nz-descriptions-item nzTitle="Estatus" [nzSpan]="1"><h4>Vigente
-                <i nz-icon nzType="check-circle" nzTheme="fill"></i>
+              <nz-descriptions-item nzTitle="Estatus" [nzSpan]="1"><h4>Vigente 
+                <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
               </h4></nz-descriptions-item>
               <nz-descriptions-item nzTitle="Segmento" [nzSpan]="1"><h4>Individual</h4></nz-descriptions-item>
               <nz-descriptions-item nzTitle="Producto" [nzSpan]="1"><h4>Premier Individual</h4></nz-descriptions-item> 
@@ -84,8 +83,10 @@
             </nz-descriptions>
           </nz-page-header-content>
          </div>
-         
-         <h3>Preguntas de seguridad</h3>
+         <nz-button-group [nzSize]="">
+          <button nz-button nzType="primary"><i nz-icon nzType="left"></i>Regresar</button>
+        </nz-button-group>
+         <h3>Preguntas de seguridad</h3> 
          <div class="inner-content3">
           <i nz-icon nzType="close" nzTheme="outline"></i>
           <br>
@@ -94,6 +95,7 @@
            <nz-form-item>
              <nz-form-control [nzSpan]="14">
                <input nz-input name="date" type="date" id="date">
+               <button nz-button nzType="validar">Validar</button>
              </nz-form-control>
            </nz-form-item >
          </form>
@@ -102,6 +104,7 @@
           <nz-form-item>
             <nz-form-control [nzSpan]="14">
               <input nz-input name="pago" type="pago" id="pago">
+              <button nz-button nzType="validar">Validar</button>
             </nz-form-control>
           </nz-form-item >
         </form>
@@ -110,6 +113,7 @@
           <nz-form-item>
             <nz-form-control [nzSpan]="14">
               <input nz-input name="importe" type="importe" id="importe">
+              <button nz-button nzType="validar">Validar</button>
             </nz-form-control>
           </nz-form-item >
         </form>
@@ -118,6 +122,7 @@
           <nz-form-item>
             <nz-form-control [nzSpan]="14">
               <input nz-input name="RFC" type="RFC" id="RFC">
+              <button nz-button nzType="validar">Validar</button>
             </nz-form-control>
           </nz-form-item >
         </form>
@@ -126,6 +131,7 @@
           <nz-form-item>
             <nz-form-control [nzSpan]="14">
               <input nz-input name="status" type="status" id="status">
+              <button nz-button nzType="validar">Validar</button>
             </nz-form-control>
           </nz-form-item >
         </form>

@@ -23,7 +23,7 @@ nz-content {
 
 .inner-content {
   background: #fff;
-  padding: 360px;
+  padding: 400px;
   min-height: 150;
   border: #CACFD2 1px solid;
 }
@@ -49,7 +49,7 @@ nz-content {
   top: 420px;
   left: 200px;
   width: 60%;
-  height: 65%;
+  height: 70%;
 }
 
 nz-footer {
@@ -64,14 +64,29 @@ nz-breadcrumb-item, nz-breadcrumb{
 }
 
 [nz-button] {
+  margin-right: 8px;
   position: relative;
-  top: 1px;
-  color: #fff;
-  background: #EB984E;
-  border: #EB984E;
-  left: 80%;
+  left: 750px;
+  color: #EB984E;
+  border: #EB984E 1px solid;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
 
+nz-button-group [nz-button] {
+  position: absolute;
+  top: 1px;
+  left: 890px;
+  color: #EB984E;
+  border: #EB984E 1px solid;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #fff;
+  float: right;
+}
+nz-descriptions-item [nzTitle]{
+  color: #080E94;
+}
 h4{
   color: #080E94;
 }
@@ -101,3 +116,5 @@ h5{
   left: 100px;
   position: relative;
 }
+
+  
