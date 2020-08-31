@@ -12,10 +12,6 @@
   word-spacing: 10px;
 }
 
-[nz-menu] {
-  line-height: 64px;
-}
-
 nz-content {
   padding: 0 50px;
   margin-top: 64px;
@@ -74,16 +70,16 @@ nz-breadcrumb-item, nz-breadcrumb{
 }
 
 nz-button-group [nz-button] {
-  position: absolute;
-  top: 1px;
+  position: relative;
+  top: 0px;
   left: 890px;
   color: #EB984E;
-  border: #EB984E 1px solid;
+  border: #fff 1px solid;
   border-radius: 10px;
-  margin-bottom: 12px;
   background: #fff;
   float: right;
 }
+
 nz-descriptions-item [nzTitle]{
   color: #080E94;
 }
@@ -115,4 +111,14 @@ h5{
   font-size: 15px;
   left: 100px;
   position: relative;
+}
+
+.site-page-header{
+  color: #080E94;
+}
+nz-descriptions-item, [nzTitle]{
+color: #080E94;
+}
+[nzColumn]{
+  color: #080E94;
 }
