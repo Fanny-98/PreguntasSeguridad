@@ -25,6 +25,7 @@
     text-align: left;
     line-height: 0.7;
     word-spacing: 10px;
+    height: 600px;
   }
   .inner-content2{
     background: #fff;
@@ -82,7 +83,7 @@ color: #EB984E;
   nz-button-group [nz-button] {
     position: absolute;
     top: 60px;
-    left: 1275px;
+    left: 1270px;
     margin-right: 0;
     border: #fff;
   }
@@ -121,11 +122,11 @@ color: #EB984E;
  
  .icon2{
    position: absolute;
-   left: 1230px;
+   left: 1210px;
    top: 65px;
  }
  .icon3{
   position: absolute;
-  left: 1230px;
+  left: 1210px;
   top: 35px;
 }
