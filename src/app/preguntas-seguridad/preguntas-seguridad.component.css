@@ -83,7 +83,7 @@ color: #EB984E;
   nz-button-group [nz-button] {
     position: absolute;
     top: 60px;
-    left: 1270px;
+    left: 1255px;
     margin-right: 0;
     border: #fff;
   }
@@ -116,9 +116,11 @@ color: #EB984E;
     font-size: 1.3em;
   }
 
-  .nzTitle{
-   font: bold;
- }
+  [nzTitle]{
+color: black;
+font: bold;
+font: size 90px;
+  }
  
  .icon2{
    position: absolute;
