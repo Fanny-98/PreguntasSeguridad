@@ -26,3 +26,5 @@ export class PreguntasSeguridadComponent {
   }
   size: NzButtonSize = 'large';
 }
+
+export class NzDemoBreadcrumbSeparatorComponent {}

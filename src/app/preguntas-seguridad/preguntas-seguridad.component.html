@@ -30,7 +30,7 @@
                 <nz-descriptions-item nzTitle="Sexo" [nzSpan]="1">Masculino</nz-descriptions-item>
                 <nz-descriptions-item nzTitle="Edad" [nzSpan]="1">20 años</nz-descriptions-item>
                 <nz-descriptions-item nzTitle="Perfil" [nzSpan]="1">Clasico</nz-descriptions-item>
-                <nz-descriptions-item nzTitle="Reg. Portal" [nzSpan]="1">
+                <nz-descriptions-item nzTitle="Reg.Portal" [nzSpan]="1">
                   <i nz-icon nzType="check-circle" nzTheme="twotone" [nzTwotoneColor]="'#1967D4'"></i>
                 </nz-descriptions-item>
               </nz-descriptions>
@@ -39,7 +39,7 @@
         <nz-content>
             <nz-breadcrumb nzSeparator="/">
                 <nz-breadcrumb-item>  <i nz-icon nzType="home"></i>
-                  Identificacion del cliente
+                  Identificacion del cliente 
                 </nz-breadcrumb-item>
                 <nz-breadcrumb-item>
                   Polizas
@@ -65,7 +65,18 @@
                       </nz-descriptions-item>
                       <nz-descriptions-item nzTitle="Ramo" [nzSpan]="1"><h4>GMM</h4></nz-descriptions-item>
                     </nz-descriptions>
-                    <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Ver documentos</span><i nz-icon nzType="down" nzTheme="outline"></i></button>
+                      <nz-descriptions nzSize="small" [nzColumn]="5">
+                      <nz-descriptions-item nzTitle="Estatus" [nzSpan]="1"><h4>Vigente 
+                        <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
+                      </h4></nz-descriptions-item>
+                      <nz-descriptions-item nzTitle="Segmento" [nzSpan]="1"><h4>Individual</h4></nz-descriptions-item>
+                      <nz-descriptions-item nzTitle="Producto" [nzSpan]="1"><h4>Premier Individual</h4></nz-descriptions-item> 
+                      <nz-descriptions-item nzTitle="Circulo" [nzSpan]="1"><h4>Novus</h4></nz-descriptions-item>
+                      <nz-descriptions-item nzTitle="Pagada hasta" [nzSpan]="1"><h4>02/07/2020</h4></nz-descriptions-item>
+                    </nz-descriptions>
+                  </nz-page-header-content>
+                 </div>
+                 <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Ver documentos</span><i nz-icon nzType="down" nzTheme="outline"></i></button>
                     <nz-modal [(nzVisible)]="isVisible" nzTitle="Preguntas de Seguridad" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
                         <h5>¿Cual es tu fecha de nacimiento?</h5>
                         <form nz-form>
@@ -104,24 +115,13 @@
                          <nz-form-item>
                            <nz-form-control [nzSpan]="14">
                              <input nz-input name="status" type="status" id="status">
-                             <button nz-button nzType="validar">Validar</button>
                            </nz-form-control>
                          </nz-form-item >
                        </form>
                     </nz-modal>
-                      <nz-descriptions nzSize="small" [nzColumn]="5">
-                      <nz-descriptions-item nzTitle="Estatus" [nzSpan]="1"><h4>Vigente 
-                        <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
-                      </h4></nz-descriptions-item>
-                      <nz-descriptions-item nzTitle="Segmento" [nzSpan]="1"><h4>Individual</h4></nz-descriptions-item>
-                      <nz-descriptions-item nzTitle="Producto" [nzSpan]="1"><h4>Premier Individual</h4></nz-descriptions-item> 
-                      <nz-descriptions-item nzTitle="Circulo" [nzSpan]="1"><h4>Novus</h4></nz-descriptions-item>
-                      <nz-descriptions-item nzTitle="Pagada hasta" [nzSpan]="1"><h4>02/07/2020</h4></nz-descriptions-item>
-                    </nz-descriptions>
-                  </nz-page-header-content>
-                 </div>
+                    <br>
                  <nz-button-group [nzSize]="size">
-                    <button nz-button nzType="primary"><i nz-icon nzType="left"></i>Regresar</button>
+                    <button nz-button nzType="primary"><i nz-icon nzType="left" ></i>Regresar</button>
                   </nz-button-group>
                 </div>
         </nz-content>

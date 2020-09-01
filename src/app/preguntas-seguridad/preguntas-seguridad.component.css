@@ -2,14 +2,6 @@
     min-height: 100vh;
   }
 
-  .logo {
-    width: 120px;
-    height: 31px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 16px 24px 16px 0;
-    float: left;
-  }
-
   nz-header {
     position: absolute;
     width: 100%;
@@ -18,10 +10,6 @@
     text-align: left;
     line-height: 0.7;
     word-spacing: 10px;
-  }
-
-  [nz-menu] {
-    line-height: 64px;
   }
 
   nz-content {
@@ -44,11 +32,12 @@
     right: 70px;
     text-align: left;
     line-height: 0.7;
-    word-spacing: -1px;
-    font-style: "word-spacing: none;"
+    word-spacing: 100px;
+    word-spacing: normal;
+    LINE-HEIGHT:20px;
+    display: inline-block;
   }
   
-
   nz-breadcrumb {
     margin: 16px 0;
   }
@@ -69,7 +58,7 @@ color: #EB984E;
   [nz-button]{
     margin-right: 8px;
     position: relative;
-    top: 5px;
+    top: 2px;
     left: 1200px;
     color: #EB984E;
     border: #EB984E 1px solid;
@@ -82,9 +71,6 @@ color: #EB984E;
     border-style: outset;
     border-radius: 10px;
     border-bottom: 4px solid #EB984E;
-    position: absolute;
-    top: 5px;
-    left: 100px;
   }
   h4{
     color: #080E94;
@@ -101,7 +87,7 @@ color: #EB984E;
 
   nz-button-group [nz-button] {
     position: absolute;
-    top: 140px;
+    top: 90px;
     left: 1275px;
     margin-right: 0;
     border: #fff;
@@ -109,4 +95,23 @@ color: #EB984E;
 
   nz-descriptions-item [nzTitle]{
       color: blue;
+  }
+
+  [nz-breadcrumb]{
+    color:#EB984E ;
+  }
+  h5{
+    color: #080E94;
+    font-size: 1.3em;
+  }
+
+  [nz-modal]{
+    width: 160%;
+  }
+  nz-select {
+    width: 120px;
+  }
+
+  nz-descriptions-item [nzTitle]{
+    display: inline-block;
   }
