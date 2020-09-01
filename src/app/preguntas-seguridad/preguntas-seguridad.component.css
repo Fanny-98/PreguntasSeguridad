@@ -1,124 +1,108 @@
 .layout {
-  min-height: 100vh;
-}
+    min-height: 100vh;
+  }
 
- nz-page-header {
-  position: absolute;
-  width: 100%;
-  height: 160px;
-  background: #fff;
-  text-align: left;
-  line-height: 0.7;
-  word-spacing: 10px;
-}
+  .logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
 
-nz-content {
-  padding: 0 50px;
-  margin-top: 64px;
-}
+  nz-header {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background: #fff;
+    text-align: left;
+    line-height: 0.7;
+    word-spacing: 10px;
+  }
 
-.inner-content {
-  background: #fff;
-  padding: 400px;
-  min-height: 150;
-  border: #CACFD2 1px solid;
-}
+  [nz-menu] {
+    line-height: 64px;
+  }
 
-.inner-content2{
-  background: #fff;
-  border: #CACFD2 1px solid;
-  height: 20%;
-  position: absolute;
-  top: 220px;
-  left: 70px;
-  right: 70px;
-  text-align: left;
-  line-height: 0.7;
-  word-spacing: -1px;
-  font-style: "word-spacing: none;"
-}
+  nz-content {
+    padding: 0 50px;
+    margin-top: 64px;
+  }
+  .inner-content {
+    background: #fff;
+    padding: 400px;
+    min-height: 150;
+    border: #CACFD2 1px solid;
+  }
+  .inner-content2{
+    background: #fff;
+    border: #CACFD2 1px solid;
+    height: 20%;
+    position: absolute;
+    top: 220px;
+    left: 70px;
+    right: 70px;
+    text-align: left;
+    line-height: 0.7;
+    word-spacing: -1px;
+    font-style: "word-spacing: none;"
+  }
+  
 
-.inner-content3{
-  background: #fff;
-  border: #CACFD2 1px solid;
-  position: absolute;
-  top: 420px;
-  left: 200px;
-  width: 60%;
-  height: 70%;
-}
+  nz-breadcrumb {
+    margin: 16px 0;
+  }
 
-nz-footer {
-  text-align: center;
-}
+  .inner-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 380px;
+  }
 
-nz-breadcrumb-item, nz-breadcrumb{
-  color: #EB984E;
-  position: relative;
-  left: 0px;
-  margin: 16px 0;
-}
+  nz-footer {
+    text-align: center;
+  }
+ nz-breadcrumb-item,nz-breadcrumb [nzSeparator] {
+color: #EB984E;
+  }
 
-[nz-button] {
-  margin-right: 8px;
-  position: relative;
-  left: 750px;
-  color: #EB984E;
-  border: #EB984E 1px solid;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
+  [nz-button]{
+    margin-right: 8px;
+    position: relative;
+    top: 5px;
+    left: 1200px;
+    color: #EB984E;
+    border: #EB984E 1px solid;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background: #fff;
+  }
 
-nz-button-group [nz-button] {
-  position: relative;
-  top: 0px;
-  left: 890px;
-  color: #EB984E;
-  border: #fff 1px solid;
-  border-radius: 10px;
-  background: #fff;
-  float: right;
-}
+  input{
+    border-style: outset;
+    border-radius: 10px;
+    border-bottom: 4px solid #EB984E;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+  }
+  h4{
+    color: #080E94;
+  }
+  nz-modal{
+    height: 200px;
+    width: 50%;
+  }    
 
-nz-descriptions-item [nzTitle]{
-  color: #080E94;
-}
-h4{
-  color: #080E94;
-}
+  [nz-button] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+  }
 
-h3{
-  color: #080E94;
-  position: absolute;
-  top: 380px;
-  left: 200px;
-}
-
-input{
-  border-style: outset;
-  border-radius: 10px;
-  border-bottom: 4px solid #EB984E;
-  position: absolute;
-  top: 5px;
-  left: 100px;
-}
-
-
-h5{
-  top: 5px;
-  color: #080E94;
-  text-align: left;
-  font-size: 15px;
-  left: 100px;
-  position: relative;
-}
-
-.site-page-header{
-  color: #080E94;
-}
-nz-descriptions-item, [nzTitle]{
-color: #080E94;
-}
-[nzColumn]{
-  color: #080E94;
-}
+  nz-button-group [nz-button] {
+    position: absolute;
+    top: 130px;
+    left: 1275px;
+    margin-right: 0;
+    border: #fff;
+  }
