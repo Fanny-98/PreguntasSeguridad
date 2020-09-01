@@ -8,7 +8,7 @@
 <body>
     <nz-layout class="layout">
         <nz-header>
-            <nz-descriptions nzSize="small" [nzColumn]="2">
+            <nz-descriptions  nzSize="small" [nzColumn]="6">
                 <nz-descriptions-item nzTitle="Atendiendo a" [nzSpan]="1">Jose Gamelo</nz-descriptions-item>
                 <nz-descriptions-item nzTitle="Perfil" [nzSpan]="1">Asegurado/Contratante</nz-descriptions-item>
               </nz-descriptions>
@@ -52,7 +52,7 @@
               <div class="inner-content">
                 <div class="inner-content2">
                   <nz-page-header-content>
-                    <nz-descriptions nzSize="small" [nzColumn]="4">
+                    <nz-descriptions nzSize="small" [nzColumn]="6">
                     <nz-descriptions-item nzTitle="Poliza" [nzSpan]="1"> 
                         <nz-select>
                           <nz-option nzValue="" nzLabel="00001405545144"></nz-option>
@@ -65,7 +65,7 @@
                       </nz-descriptions-item>
                       <nz-descriptions-item nzTitle="Ramo" [nzSpan]="1"><h4>GMM</h4></nz-descriptions-item>
                     </nz-descriptions>
-                      <nz-descriptions nzSize="small" [nzColumn]="5">
+                      <nz-descriptions nzSize="small" [nzColumn]="6">
                       <nz-descriptions-item nzTitle="Estatus" [nzSpan]="1"><h4>Vigente 
                         <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
                       </h4></nz-descriptions-item>
@@ -73,16 +73,18 @@
                       <nz-descriptions-item nzTitle="Producto" [nzSpan]="1"><h4>Premier Individual</h4></nz-descriptions-item> 
                       <nz-descriptions-item nzTitle="Circulo" [nzSpan]="1"><h4>Novus</h4></nz-descriptions-item>
                       <nz-descriptions-item nzTitle="Pagada hasta" [nzSpan]="1"><h4>02/07/2020</h4></nz-descriptions-item>
+              
                     </nz-descriptions>
                   </nz-page-header-content>
                  </div>
-                 <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Ver documentos</span><i nz-icon nzType="down" nzTheme="outline"></i></button>
+                 <button class="btn2" nz-button [nzType]="'primary'" (click)="showModal()"><span>Ver documentos</span><i nz-icon nzType="down" nzTheme="outline"></i></button>
                     <nz-modal [(nzVisible)]="isVisible" nzTitle="Preguntas de Seguridad" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
                         <h5>¿Cual es tu fecha de nacimiento?</h5>
                         <form nz-form>
                           <nz-form-item>
                             <nz-form-control [nzSpan]="14">
                               <input nz-input name="date" type="date" id="date">
+                              <button nz-button nzType="validar">Validar</button>
                             </nz-form-control>
                           </nz-form-item >
                         </form>
@@ -91,6 +93,7 @@
                          <nz-form-item>
                            <nz-form-control [nzSpan]="14">
                              <input nz-input name="pago" type="pago" id="pago">
+                             <button nz-button nzType="validar">Validar</button>
                            </nz-form-control>
                          </nz-form-item >
                        </form>
@@ -99,6 +102,7 @@
                          <nz-form-item>
                            <nz-form-control [nzSpan]="14">
                              <input nz-input name="importe" type="importe" id="importe">
+                             <button nz-button nzType="validar">Validar</button>
                            </nz-form-control>
                          </nz-form-item >
                        </form>
@@ -107,6 +111,7 @@
                          <nz-form-item>
                            <nz-form-control [nzSpan]="14">
                              <input nz-input name="RFC" type="RFC" id="RFC">
+                             <button nz-button nzType="validar">Validar</button>
                            </nz-form-control>
                          </nz-form-item >
                        </form>
@@ -115,6 +120,7 @@
                          <nz-form-item>
                            <nz-form-control [nzSpan]="14">
                              <input nz-input name="status" type="status" id="status">
+                             <button nz-button nzType="validar">Validar</button>
                            </nz-form-control>
                          </nz-form-item >
                        </form>
@@ -123,6 +129,7 @@
                  <nz-button-group [nzSize]="size">
                     <button nz-button nzType="primary"><i nz-icon nzType="left" ></i>Regresar</button>
                   </nz-button-group>
+                  <button class="btn3" nz-button nzType="primary">Medios de contacto</button>
                 </div>
         </nz-content>
         <nz-footer></nz-footer>
