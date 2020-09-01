@@ -13,7 +13,7 @@
   nz-header {
     position: absolute;
     width: 100%;
-    height: 160px;
+    height: 120px;
     background: #fff;
     text-align: left;
     line-height: 0.7;
@@ -101,7 +101,7 @@ color: #EB984E;
 
   nz-button-group [nz-button] {
     position: absolute;
-    top: 130px;
+    top: 170px;
     left: 1275px;
     margin-right: 0;
     border: #fff;
