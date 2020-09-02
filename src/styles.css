@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-
+.ant-descriptions-item-label{
+    font-weight: bold;
+  }
+  
 .inner-content2{
     color: #080E94;
 
@@ -10,10 +13,16 @@
 .ant-breadcrumb-separator{
     color: #EB984E;
 }
-#color{
-    color: black ;
+.ant-select-item-option-content {
+    flex: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #080E94;
 }
-.ant-descriptions-item-label{
-    font-weight: bold;
-
-  }
+.ant-descriptions-row, .ant-page-header-content{
+    color: blue;
+}
+nz-descriptions.ant-descriptions.uno.ant-descriptions-small{
+    color: blue;
+}
